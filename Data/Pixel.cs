@@ -12,6 +12,12 @@ namespace MyPhotoshop
             if (value < 0 || value > 1) throw new ArgumentException();
             return value;
         }
+        public static double Trim(double value)
+        {
+            if (value < 0) return 0;
+            if (value > 1) return 1;
+            return value;
+        }
         double r;
         public double R
         {
