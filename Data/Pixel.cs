@@ -5,8 +5,15 @@ using System.Text;
 
 namespace MyPhotoshop
 {
-    public class Pixel
+    public struct Pixel
     {
+        public Pixel(double r, double g, double b)
+        {
+            this.r = this.g = this.b = 0;
+            this.r = r;
+            this.g = g;
+            this.b = b;
+        }
         public double Check(double value)
         {
             if (value < 0 || value > 1) throw new ArgumentException();
@@ -22,20 +29,20 @@ namespace MyPhotoshop
         public double R
         {
             get { return r; }
-            set { r = Check( value); }
+            set { r = Check(value); }
         }
         double g;
         public double G
         {
-            get {  return g;}
+            get { return g; }
             set
-            { g = Check(value);}
+            { g = Check(value); }
         }
         double b;
         public double B
         {
-            get{return b;}
-            set{b = Check(value); }
+            get { return b; }
+            set { b = Check(value); }
         }
 
     }
