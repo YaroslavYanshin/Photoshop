@@ -10,5 +10,7 @@ namespace MyPhotoshop
         ParameterInfo[] GetDescription();
 
         void SetValues(double[] values);
+
+        void Parse(double[] values);
     }
 }

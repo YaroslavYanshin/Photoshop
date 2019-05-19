@@ -16,5 +16,10 @@ namespace MyPhotoshop
         {
             
         }
+
+        public void Parse(double [] values)
+        {
+
+        }
     }
 }

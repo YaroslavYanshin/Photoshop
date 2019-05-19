@@ -15,10 +15,14 @@ namespace MyPhotoshop
                 new ParameterInfo { Name="Коэффициент", MaxValue=10, MinValue=0, Increment=0.1, DefaultValue=1 }
             };
         }
+        public void Parse(double[] values)
+        {
+           Cofficient = values[0];
+        }
 
         public void SetValues(double[] values)
         {
-           Cofficient = values[0];
+            Cofficient = values[0];
         }
     }
 }
