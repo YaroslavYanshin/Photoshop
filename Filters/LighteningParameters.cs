@@ -7,7 +7,7 @@ namespace MyPhotoshop
 {
     public class LighteningParameters : IParameters
     {
-        public double Cofficient { get; set; }
+        public double Coefficient { get; set; }
         public ParameterInfo[] GetDescription()
         {
             return new[]
@@ -17,12 +17,12 @@ namespace MyPhotoshop
         }
         public void Parse(double[] values)
         {
-           Cofficient = values[0];
+           Coefficient = values[0];
         }
 
         public void SetValues(double[] values)
         {
-            Cofficient = values[0];
+            Coefficient = values[0];
         }
     }
 }
